@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ccsw</groupId>
-	<artifactId>team-manager</artifactId>
-	<version>1.4.2</version>
-	<name>teamManager</name>
-	<description>teamManager CCSW</description>
+	<artifactId>calendar-server</artifactId>
+	<version>0.0.1</version>
+	<name>calendarmanager</name>
+	<description>calendar manager</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -130,7 +130,19 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
+		
+		<!-- Swagger -->
+		<dependency>
+    		<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger2</artifactId>
+    		<version>3.0.0</version>
+		</dependency>
+		<dependency>
+    		<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger-ui</artifactId>
+    		<version>3.0.0</version>
+		</dependency>
+	
   <dependency>
     <groupId>io.swagger</groupId>
     <artifactId>swagger-annotations</artifactId>
