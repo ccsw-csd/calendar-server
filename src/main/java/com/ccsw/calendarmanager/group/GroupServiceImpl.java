@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.ccsw.calendarmanager.calendar.CalendarRepository;
 import com.ccsw.calendarmanager.calendar.model.CalendarEntity;
+import com.ccsw.calendarmanager.calendarday.CalendarDayRepository;
 import com.ccsw.calendarmanager.config.mapper.BeanMapper;
 import com.ccsw.calendarmanager.group.model.GroupDto;
 import com.ccsw.calendarmanager.group.model.GroupEntity;
@@ -25,6 +26,9 @@ public class GroupServiceImpl implements GroupService {
   
   @Autowired
   CalendarRepository calendarRepository;
+  
+  @Autowired
+  CalendarDayRepository calendarDayRepository;
   
   @Autowired
   private BeanMapper beanMapper;
@@ -66,6 +70,7 @@ public class GroupServiceImpl implements GroupService {
     	      calendar.setCenterId(dto.getCentersSelected().get(i));
     	      calendar.setGroupId(group.getId());
     	      this.calendarRepository.save(calendar);
+   
     	 }
  	}
      
